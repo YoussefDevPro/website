@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Jersey+10&family=Pixelify+Sans:wght@400..700&display=swap");
+@import "https://www.nerdfonts.com/assets/css/webfont.css";
+@import "../node_modules/nes.css/css/nes.css";
+@import "tailwindcss";
+
+body {
+  background-color: black;
+  color: white;
+  margin: 0;
+}
+
+p,
+h1 {
+  font-family: "Jersey 10", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+}
