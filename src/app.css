@@ -30,3 +30,7 @@ i {
 	margin: 0;
 	text-align: center;
 }
+
+.snes-theme {
+    @import 'snes.css/dist/snes.min.css';
+}

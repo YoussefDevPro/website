@@ -8,7 +8,7 @@
 	let displayedText = $state('');
 	let displayerName = $state('');
 	let speed = 50;
-	const longSpeed = 400;
+	const longSpeed = 600;
 	const pauseChars = ['|', '!', '.', ',', '?'];
 
 	onMount(() => {
@@ -59,16 +59,37 @@
 			</span>
 		{/each}
 	</h1>
-	<p class="text-3xl">I'm a 15yo <span class="italic">(soon 16yo)</span> dev from morrocco.</p>
-	<p class="text-3xl">
-		Im a <span class="rusty-text"><i class="nf nf-dev-rust"></i> rusty developper</span>, and i code
-		a lot of backend or nerdy stuff.
-	</p>
-	<p class="text-3xl">
-		and im also a <span class="text-[#FCF434]">non</span>bin<span class="text-[#9C59D1]">ary</span>
-		<span class="text-[#A3A3A3]">ase</span>xu<span class="text-[#800080]">al</span> furry
-		<i class="nf nf-md-cat"></i>.
-	</p>
-	<p class="text-3xl">I play undertale/deltarune a LOT.</p>
-	<p class="text-3xl">And this is my very first website OwO.</p>
+	<Typewriter startDelay={2000} class="text-3xl">
+		<p>I'm a 15yo <span class="italic">(soon 16yo)</span> dev from Morocco.</p>
+	</Typewriter>
+
+	<Typewriter startDelay={3000} class="text-3xl">
+		<p>
+			I'm a <span class="rusty-text"><i class="nf nf-dev-rust"></i> rusty developer</span>, and I
+			code a lot of backend or nerdy stuff.
+		</p>
+	</Typewriter>
+
+	<Typewriter startDelay={4000} class="text-3xl">
+		<p>
+			And I'm also a
+			<span class="text-[#FCF434]">non</span>bin<span class="text-[#9C59D1]">ary</span>
+			<span class="text-[#A3A3A3]">ase</span>xu<span class="text-[#800080]">al</span>
+			furry <i class="nf nf-md-cat"></i>.
+		</p>
+	</Typewriter>
+
+	<Typewriter startDelay={5000} class="text-3xl">
+		<p>I play Undertale/Deltarune a LOT.</p>
+	</Typewriter>
+
+	<Typewriter startDelay={6500} class="text-3xl">
+		<p>
+			This is my <span class="snes-theme"
+				><span class="snes-button"
+					><img src="github.webp" alt="guthib" class="w-8 mr-1 inline" /> guthib</span
+				></span
+			> :3
+		</p>
+	</Typewriter>
 </div>

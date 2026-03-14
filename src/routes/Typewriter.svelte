@@ -2,44 +2,21 @@
 	import { onMount } from 'svelte';
 	import { blur } from 'svelte/transition';
 
-	let { text, startDelay = 0, speed = 30, longSpeed = 300, class: className = '' } = $props();
+	let { children, startDelay = 0, class: className = '' } = $props();
 
-	let displayedText = $state('');
-	const pauseChars = ['|', '!', '.', ',', '?', ':', ';'];
+	let visible = $state(false);
 
 	onMount(() => {
-		let i = 0;
-		let timeoutId: number;
+		const timer = setTimeout(() => {
+			visible = true;
+		}, startDelay);
 
-		function type() {
-			if (i < text.length) {
-				const char = text.charAt(i);
-				let currentDelay = speed;
-
-				if (pauseChars.includes(char)) {
-					currentDelay = longSpeed;
-					if (char !== '|') displayedText += char;
-				} else {
-					displayedText += char;
-				}
-
-				i++;
-				timeoutId = setTimeout(type, currentDelay);
-			}
-		}
-
-		// Start typing after the initial delay
-		const startTimeout = setTimeout(type, startDelay);
-
-		return () => {
-			clearTimeout(startTimeout);
-			clearTimeout(timeoutId);
-		};
+		return () => clearTimeout(timer);
 	});
 </script>
 
-<p class={className}>
-	{#each displayedText as char}
-		<span in:blur={{ duration: 400 }}>{char}</span>
-	{/each}
-</p>
+{#if visible}
+	<div in:blur={{ duration: 800 }} class={className}>
+		{@render children()}
+	</div>
+{/if}
