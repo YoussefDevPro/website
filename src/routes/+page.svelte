@@ -3,6 +3,8 @@
 	import { blur, fly } from 'svelte/transition';
 	import Typewriter from './Typewriter.svelte';
 
+	let guthibProfile = 'https://github.com/YoussefDevPro';
+
 	const fullText = 'Hai! My name is';
 	const Name = 'Yousafe!';
 	let displayedText = $state('');
@@ -37,7 +39,7 @@
 			}
 		}
 
-		type(); // Start the loop
+		type();
 
 		return () => clearTimeout(timeoutId);
 	});
@@ -85,9 +87,11 @@
 
 	<Typewriter startDelay={6500} class="text-3xl">
 		<p>
-			And this is my <span class="p-1 pixel-corners inline-flex align-middle"
-				><img src="github.svg" alt="guthib" class="m-0 w-7 mr-2 inline" /> guthib</span
-			> if you ever wanna check :3
+			And this is my <a href={guthibProfile} target="_blank"
+				><button class="p-1 pixel-corners inline-flex align-middle"
+					><img src="github.svg" alt="guthib" class="m-0 w-7 mr-2 pixelated inline" /> guthib</button
+				>
+			</a> if you ever wanna check :3
 		</p>
 	</Typewriter>
 </div>
