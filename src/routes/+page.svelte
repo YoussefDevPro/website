@@ -85,11 +85,9 @@
 
 	<Typewriter startDelay={6500} class="text-3xl">
 		<p>
-			This is my <span class="snes-theme"
-				><span class="snes-button"
-					><img src="github.webp" alt="guthib" class="w-8 mr-1 inline" /> guthib</span
-				></span
-			> :3
+			And this is my <span class="p-1 pixel-corners inline-flex align-middle"
+				><img src="github.svg" alt="guthib" class="m-0 w-7 mr-2 inline" /> guthib</span
+			> if you ever wanna check :3
 		</p>
 	</Typewriter>
 </div>

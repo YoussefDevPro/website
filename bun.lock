@@ -6,7 +6,6 @@
       "name": "portfolio",
       "dependencies": {
         "@tailwindcss/vite": "^4.2.1",
-        "snes.css": "^1.0.1",
         "tailwindcss": "^4.2.1",
       },
       "devDependencies": {
@@ -281,8 +280,6 @@
     "set-cookie-parser": ["set-cookie-parser@3.0.1", "", {}, "sha512-n7Z7dXZhJbwuAHhNzkTti6Aw9QDDjZtm3JTpTGATIdNzdQz5GuFs22w90BcvF4INfnrL5xrX3oGsuqO5Dx3A1Q=="],
 
     "sirv": ["sirv@3.0.2", "", { "dependencies": { "@polka/url": "^1.0.0-next.24", "mrmime": "^2.0.0", "totalist": "^3.0.0" } }, "sha512-2wcC/oGxHis/BoHkkPwldgiPSYcpZK3JU28WoMVv55yHJgcZ8rlXvuG9iZggz+sU1d4bRgIGASwyWqjxu3FM0g=="],
-
-    "snes.css": ["snes.css@1.0.1", "", {}, "sha512-/QmQt8RgFkSJLq15OBnmqud3Ra+ms9IJyH/x2L6eNIlGHo5BWyLQJP3BsH6L947UPTfbddgVrsRJ88IsXk8c5Q=="],
 
     "source-map-js": ["source-map-js@1.2.1", "", {}, "sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA=="],
 
