@@ -28,7 +28,7 @@ i, a, button {
 }
 
 .rusty-text {
-	background: url('rust.jpg') no-repeat center center;
+	background: url('/rust.jpg') no-repeat center center;
 	filter: brightness(180%);
 	background-size: cover;
 	color: #fff;
