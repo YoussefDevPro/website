@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Pixelify+Sans:wght@400..700&family=Tiny5&display=swap');
 @import 'https://www.nerdfonts.com/assets/css/webfont.css';
 @import 'tailwindcss';
 
@@ -6,11 +6,21 @@ body {
 	background-color: black;
 	color: white;
 	margin: 0;
+  padding: 0;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+p.date {
+  font-family: "Tiny5", sans-serif;
 }
 
 p,
 h1,
-i {
+i, a, button {
 	font-family: 'Jersey 10', sans-serif;
 	font-optical-sizing: auto;
 	font-style: normal;
@@ -19,7 +29,7 @@ i {
 
 .rusty-text {
 	background: url('rust.jpg') no-repeat center center;
-	filter: brightness(190%);
+	filter: brightness(180%);
 	background-size: cover;
 	color: #fff;
 	-webkit-text-fill-color: transparent;
@@ -134,4 +144,206 @@ i {
 }
 .pixel-corners::after {
   margin: -3px;
+}
+
+/* 2 */
+
+.pixel-corners-2,
+.pixel-corners--wrapper-2 {
+  clip-path: polygon(0px calc(100% - 35px),
+    5px calc(100% - 35px),
+    5px calc(100% - 25px),
+    10px calc(100% - 25px),
+    10px calc(100% - 15px),
+    15px calc(100% - 15px),
+    15px calc(100% - 10px),
+    25px calc(100% - 10px),
+    25px calc(100% - 5px),
+    35px calc(100% - 5px),
+    35px 100%,
+    calc(100% - 35px) 100%,
+    calc(100% - 35px) calc(100% - 5px),
+    calc(100% - 25px) calc(100% - 5px),
+    calc(100% - 25px) calc(100% - 10px),
+    calc(100% - 15px) calc(100% - 10px),
+    calc(100% - 15px) calc(100% - 15px),
+    calc(100% - 10px) calc(100% - 15px),
+    calc(100% - 10px) calc(100% - 25px),
+    calc(100% - 5px) calc(100% - 25px),
+    calc(100% - 5px) calc(100% - 35px),
+    100% calc(100% - 35px),
+    100% 35px,
+    calc(100% - 5px) 35px,
+    calc(100% - 5px) 25px,
+    calc(100% - 10px) 25px,
+    calc(100% - 10px) 15px,
+    calc(100% - 15px) 15px,
+    calc(100% - 15px) 10px,
+    calc(100% - 25px) 10px,
+    calc(100% - 25px) 5px,
+    calc(100% - 35px) 5px,
+    calc(100% - 35px) 0px,
+    35px 0px,
+    35px 5px,
+    25px 5px,
+    25px 10px,
+    15px 10px,
+    15px 15px,
+    10px 15px,
+    10px 25px,
+    5px 25px,
+    5px 35px,
+    0px 35px);
+  position: relative;
+}
+
+.pixel-corners-2 {
+  border: 5px solid transparent;
+  border-bottom: none;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+.pixel-corners--wrapper-2 {
+  width: fit-content;
+  height: fit-content;
+}
+.pixel-corners--wrapper-2 .pixel-corners-2 {
+  display: block;
+  clip-path: polygon(5px 35px,
+    10px 35px,
+    10px 25px,
+    15px 25px,
+    15px 15px,
+    25px 15px,
+    25px 10px,
+    35px 10px,
+    35px 5px,
+    calc(100% - 0px) 0px,
+    calc(100% - 0px) 0px,
+    calc(100% - 0px) 0px,
+    calc(100% - 0px) 0px,
+    calc(100% - 0px) 0px,
+    calc(100% - 0px) 0px,
+    calc(100% - 0px) 0px,
+    calc(100% - 0px) 0px,
+    calc(100% - 5px) 0px,
+    calc(0% - 0x) calc(100% - 35px),
+    calc(0% - 0px) calc(100% - 35px),
+    calc(0% - 0px) calc(100% - 25px),
+    calc(0% - 0px) calc(100% - 25px),
+    calc(0% - 0px) calc(100% - 15px),
+    calc(0% - 0px) calc(100% - 15px),
+    calc(0% - 0px) calc(100% - 10px),
+    calc(0% - 0px) calc(100% - 10px),
+    calc(0% - 0px) calc(100% - 5px),
+    35px calc(50% - 5px),
+    35px calc(50% - 10px),
+    25px calc(50% - 10px),
+    25px calc(50% - 15px),
+    15px calc(50% - 15px),
+    15px calc(50% - 25px),
+    10px calc(50% - 25px),
+    10px calc(50% - 35px),
+    5px calc(100% - 35px));
+}
+.pixel-corners-2::after,
+.pixel-corners--wrapper-2::after {
+  /* height: 50px; */
+  content: "";
+  position: absolute;
+  clip-path: polygon(
+  0px calc(100% - 35px),
+    5px calc( 100% -  5px),
+    5px calc( 100% -  5px),
+    10px calc(100% - 5px),
+    10px calc(100% - 5px),
+    15px calc(100% - 5px),
+    15px calc(100% - 0px),
+    25px calc(100% - 0px),
+    25px calc(100% - 5px),
+    /* 35px calc(100% - 5px), */
+    /* 35px 100%, */
+    /* calc(100% - 35px) 100%, */
+    calc(100% - 35px) calc(100% -  5px),
+    calc(100% - 25px) calc(100% - 5px),
+    calc(100% - 25px) calc(100% - 0px),
+    calc(100% - 15px) calc(100% - 0px),
+    calc(100% - 15px) calc(100% - 5px),
+    calc(100% - 10px) calc(100% - 5px),
+    calc(100% - 10px) calc(100% - 5px),
+    calc(100% - 5px)  calc(100% -  5px),
+    calc(100% - 5px)  calc(100% -  5px),
+    100% calc(100% - 35px),
+    100% 35px,
+    calc(100% + 15px)  0px,
+    calc(100% + 15px)  0px,
+    calc(100% + 15px) 0px,
+    calc(100% + 15px) 0px,
+    calc(100% + 15px) 0px,
+    calc(100% + 15px) 0px,
+    calc(100% + 15px) 0px,
+    calc(100% + 15px) 0px,
+    calc(100% + 15px) 0px,
+    calc(100% + 15px) 0px,
+    -100px  0px,
+    -100px  5px,
+    -100px  5px,
+    -100px 0px,
+    -100px 0px,
+    -100px 5px,
+    -100px 5px,
+    -100px 5px,
+    -100px 5px,
+    /* 5px 35px, */
+    /* 0px 35px, */
+    /* 0px 50%, */
+    /* 5px 50%, */
+     5px 35px,
+    10px 35px,
+    10px 25px,
+    15px 25px,
+    15px 15px,
+    25px 15px,
+    25px 10px,
+    35px 10px,
+    35px 5px,
+    calc(100% - 35px)  5px,
+    calc(100% - 35px) 10px,
+    calc(100% - 25px) 10px,
+    calc(100% - 25px) 15px,
+    calc(100% - 15px) 15px,
+    calc(100% - 15px) 25px,
+    calc(100% - 10px) 25px,
+    calc(100% - 10px) 35px,
+    calc(200% - 5px) 35px,
+    calc(200% - 5px) calc(100% - 5px),
+    calc(100% - 0px) calc(100% - 5px),
+    calc(100% - 0px) calc(100% - 5px),
+    calc(100% - 5px) calc(100% - 5px),
+    calc(100% - 5px) calc(100% - 5px),
+    calc(100% - 5px) calc(100% - 5px),
+    calc(100% - 5px) calc(100% - 0px),
+    calc(100% - 5px) calc(100% - 0px),
+    calc(100% - 5px) calc(100% - 0px),
+    5px calc(200% - 0px),
+    5px calc(200% - 0px),
+    5px calc(200% - 0px),
+    5px calc(200% - 5px),
+    5px calc(200% - 5px),
+    5px calc(200% - 5px),
+    0px calc(200% - 5px),
+    0px calc(200% - 5px),
+    5px calc(200% - 0px),
+    5px 100%,
+    0px 100%);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  display: block;
+  pointer-events: none;
+}
+.pixel-corners-2::after {
+  margin: -5px;
 }
